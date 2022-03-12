@@ -1,5 +1,5 @@
 import Nav from "./components/Nav";
-import Main from "./components/Main";
+import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Populares from "./components/Populares";
 import Buscar from "./components/Buscar";
@@ -19,7 +19,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
     </Nav>
 
     <Routes>
-       <Route path="/" element={<Main />} />
+       <Route path="/" element={<Home />} />
        <Route path="/ultimos-lanzamientos" element={<UltimosLanzamientos />} />
        <Route path="/populares" element={<Populares />} />
        <Route path="/buscar" element={<Buscar />} />
