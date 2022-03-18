@@ -1,5 +1,15 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import ItemListadoPeliculas from "./ItemListadoPeliculas";
+import {
+  List,
+  ListItem, 
+  ListItemText,
+  ListItemIcon,
+  ListItemAvatar,
+  Avatar,
+  Divider,
+} from "@mui/material"
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
 const Listados = ({ titulo, url }) =>{
@@ -13,24 +23,42 @@ const Listados = ({ titulo, url }) =>{
   ,[])
   return (
     <div className="lista-peliculas">
-
       <h2>{titulo}</h2>
 
-
-      {listaPeliculas.map(pelicula =>
-      (
-        <ItemListadoPeliculas
-        titulo={pelicula.title}
-        imagen={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
-        link={`/${pelicula.id}`}
-        />
-      )
       
-      )}
+      {listaPeliculas.map((pelicula) => (
+        <List>
+       <ListItem button>
+          <ListItemAvatar>
+                <Avatar
+                  alt={`imagen de la pelicula`}
+                  src={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
+                />
+              </ListItemAvatar>
+         <ListItemText>{pelicula.title}</ListItemText>
+         <ListItemIcon >
+              <ArrowForwardIosIcon></ArrowForwardIosIcon>
+            </ListItemIcon>
+            
+       </ListItem>
 
+<Divider/>
+</List>
+     
+      ))}
+     
+
+      {/* 
+      {listaPeliculas.map((pelicula) => (
+        <ItemListadoPeliculas
+          titulo={pelicula.title}
+          imagen={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
+          link={`/${pelicula.id}`}
+        />
+      ))} */}
+      
     </div>
-
-  )
+  );
 }
 
 export default Listados;
