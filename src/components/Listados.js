@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import ItemListadoPeliculas from "./ItemListadoPeliculas";
 import {
   List,
   ListItem, 
