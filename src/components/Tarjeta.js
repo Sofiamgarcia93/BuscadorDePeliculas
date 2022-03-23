@@ -1,8 +1,10 @@
+import Box from '@mui/material/Box';
+
 const Tarjeta = () =>{
     return(
-        <div>
-            Soy una Tarjeta
-        </div>
+        <Box>
+            
+        </Box>
     )
 }
 
