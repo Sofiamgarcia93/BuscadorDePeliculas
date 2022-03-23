@@ -20,7 +20,7 @@ const Home = () =>{
         </Box>
         </Grid>
 
-        <Grid item xs={6}>
+        <Grid item xs={4}>
         <Box>
 
             <Listados 
@@ -30,7 +30,7 @@ const Home = () =>{
         </Box>
         </Grid>
 
-        <Grid item xs={6}>
+        <Grid item xs={4}>
         <Box>
             <Listados
             titulo="Peliculas Mejor Puntuadas"
