@@ -41,7 +41,7 @@ const Nav = () =>{
               </Button>
 
               <Button>
-              <Link to="/buscar"  style={{ textDecoration: "none", color: "white" }}>Buscar</Link>
+              <Link to="/BuscadorPeliculas"  style={{ textDecoration: "none", color: "white" }}>Buscar</Link>
               </Button>
             </Toolbar>
           </AppBar>
