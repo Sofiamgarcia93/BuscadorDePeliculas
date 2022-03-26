@@ -11,6 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { Link } from "react-router-dom";
 
 
 const Listados = ({ titulo, url }) => {
@@ -63,9 +64,11 @@ const Listados = ({ titulo, url }) => {
               />
             </ListItemAvatar>
             <ListItemText>{pelicula.title}</ListItemText>
+            <Link to={`/detalle-pelicula/${pelicula.id}`}>
             <ListItemIcon>
               <ArrowForwardIosIcon></ArrowForwardIosIcon>
             </ListItemIcon>
+            </Link>
           </ListItem>
 
           <Divider />

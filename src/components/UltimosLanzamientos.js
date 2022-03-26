@@ -6,7 +6,7 @@ import useFetchPeliculas from "../hooks/useFetchPeliculas"
 
 const UltimosLanzamientos = () => {
   const peliculas = useFetchPeliculas("top_rated");
-  console.log(peliculas[0]?.title)
+  
   return (
    
       <Box
