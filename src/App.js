@@ -23,7 +23,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
        <Route path="/ultimos-lanzamientos" element={<UltimosLanzamientos />} />
        <Route path="/populares" element={<Populares />} />
        <Route path="/BuscadorPeliculas" element={<BuscadorPeliculas />} />
-       <Route path="/detalle-pelicula/:" element={<DetallePelicula/>} />
+       <Route path="/detalle-pelicula/:idPelicula" element={<DetallePelicula/>} />
      </Routes>
       
       

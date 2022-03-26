@@ -5,7 +5,7 @@ import useFetchPeliculas from "../hooks/useFetchPeliculas"
 
 const Populares = () =>{
     const peliculas = useFetchPeliculas("popular");
-    console.log(peliculas[0]?.title)
+    
     return(
      
         <Box
