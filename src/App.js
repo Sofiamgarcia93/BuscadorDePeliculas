@@ -2,11 +2,11 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Populares from "./components/Populares";
-import Buscar from "./components/Buscar";
+import BuscadorPeliculas from "./components/BuscadorPeliculas";
 import UltimosLanzamientos from "./components/UltimosLanzamientos";
 import DetallePelicula from "./components/DetallePelicula";
 import './App.css';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 
@@ -22,7 +22,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
        <Route path="/" element={<Home />} />
        <Route path="/ultimos-lanzamientos" element={<UltimosLanzamientos />} />
        <Route path="/populares" element={<Populares />} />
-       <Route path="/buscar" element={<Buscar />} />
+       <Route path="/BuscadorPeliculas" element={<BuscadorPeliculas />} />
        <Route path="/detalle-pelicula/:" element={<DetallePelicula/>} />
      </Routes>
       
