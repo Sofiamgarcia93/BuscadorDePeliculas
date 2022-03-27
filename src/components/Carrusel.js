@@ -39,7 +39,6 @@ const Carrusel = () => {
               sx={{
                 maxWidth: 950,
                 opacity: [0.9, 0.9, 0.8],
-                bgcolor: "#424242",
                 boxShadow: 1,
                 display: "flex",
                 alignItems: "center",
