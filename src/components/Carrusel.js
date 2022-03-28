@@ -20,7 +20,7 @@ const Carrusel = () => {
         dots={true}
         arrows={true}
         slidesToShow={1}
-        autoplay={true}
+        // autoplay={true}
         autoplaySpeed={1500}
       >
         {peliculas.map((pelicula) => (
@@ -31,44 +31,45 @@ const Carrusel = () => {
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               height: "60vh",
-              display: "flex",
-              flexDirection: "column-reverse",
+              display: "flex",       
+              flexDirection: "column",
+              alignContent: "center",
+              justifyContent: "flex-end",
+              alignItems: "center",
             }}
           >
             <Box
               sx={{
                 maxWidth: 950,
-                opacity: [0.9, 0.9, 0.8],
+                bgcolor: 'transparent',
+                bgopacity: [0.9, 0.8, 0.7],
                 boxShadow: 1,
                 display: "flex",
                 alignItems: "center",
                 flexDirection: "column",
                 textAlign: "center",
-                px:40,
-                py:40,
+                padding: 3,
               }}
             >
-              <Card>
-                <CardContent>
-                  <Typography variant="h5" component="div">
+              <Box
+              sx={{color: "text.primary"}}>
+                  <Typography variant="h5" component="div" >
                     {pelicula.title}
                   </Typography>
-                  <Typography
-                    sx={{ fontSize: 14 }}
+                  <Typography variant="h5"
+                    sx={{ fontSize: 16 }}
                     color="text.secondary"
                     gutterBottom
                   >
                     {pelicula.overview}
                   </Typography>
-                </CardContent>
-                <CardActions>
+                
                   <Link to={`/detalle-pelicula/${pelicula.id}`}>
                     <Button size="small" variant="contained" color="secondary">
                       Ver mas..
                     </Button>
                   </Link>
-                </CardActions>
-              </Card>
+                </Box>
             </Box>
           </Box>
         ))}
