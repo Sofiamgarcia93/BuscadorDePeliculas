@@ -1,7 +1,4 @@
 import Box from "@mui/material/Box";
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Slider from "react-slick";
@@ -20,7 +17,7 @@ const Carrusel = () => {
         dots={true}
         arrows={true}
         slidesToShow={1}
-        // autoplay={true}
+        autoplay={true}
         autoplaySpeed={1500}
       >
         {peliculas.map((pelicula) => (
@@ -31,24 +28,25 @@ const Carrusel = () => {
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               height: "60vh",
-              display: "flex",       
-              flexDirection: "column",
-              alignContent: "center",
-              justifyContent: "flex-end",
-              alignItems: "center",
+              display: "flex !important",       
+              flexDirection: "column !important",
+              alignContent: "center !important",
+              justifyContent: "flex-end !important",
+              alignItems: "center !important",
             }}
           >
             <Box
               sx={{
                 maxWidth: 950,
-                bgcolor: 'transparent',
-                bgopacity: [0.9, 0.8, 0.7],
+                bgcolor: '#FFFFFF',
+                opacity: [0.9, 0.8, 0.7],
                 boxShadow: 1,
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-                textAlign: "center",
+                display: "flex !important",
+                alignItems: "center !important",
+                flexDirection: "column !important",
+                textAlign: "center !important",
                 padding: 3,
+                m: 1,
               }}
             >
               <Box
@@ -64,8 +62,9 @@ const Carrusel = () => {
                     {pelicula.overview}
                   </Typography>
                 
-                  <Link to={`/detalle-pelicula/${pelicula.id}`}>
-                    <Button size="small" variant="contained" color="secondary">
+                  <Link to={`/detalle-pelicula/${pelicula.id}`} style={{ textDecoration: 'none' }}>
+                    <Button size="small" variant="contained" color="secondary"
+                    sx={{  textDecorationStyle:"none",}}>
                       Ver mas..
                     </Button>
                   </Link>
