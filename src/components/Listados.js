@@ -27,13 +27,12 @@ const Listados = ({ titulo, url }) => {
     <Box
       sx={{
         height: "450px",
-        overflow: "scroll",
         borderBottom: `1px  solid`,
       }}
     >
       <Box
         sx={{
-          bgcolor:'#6fbf73',
+          bgcolor:'#424242',
           height: 80,
           display: "flex",
           alignItems: "center",
@@ -43,7 +42,7 @@ const Listados = ({ titulo, url }) => {
       >
         <Typography
           sx={{
-            bgcolor:'#6fbf73',
+            bgcolor:'#424242',
             color: "white",
           }}
           variant="h5"
@@ -53,7 +52,9 @@ const Listados = ({ titulo, url }) => {
           {titulo}
         </Typography>
       </Box>
-
+       <Box
+       sx={{overflow: "scroll", 
+       height: "50vh" }}>   
       {listaPeliculas.map((pelicula) => (
         <List>
           <ListItem button>
@@ -74,6 +75,7 @@ const Listados = ({ titulo, url }) => {
           <Divider />
         </List>
       ))}
+      </Box>
     </Box>
   );
 };
