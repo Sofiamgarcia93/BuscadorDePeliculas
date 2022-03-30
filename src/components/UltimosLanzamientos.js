@@ -2,10 +2,25 @@ import Tarjeta from "./Tarjeta"
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 import useFetchPeliculas from "../hooks/useFetchPeliculas"
-
+import Paginado from "./Paginado"
+import { useState } from "react"
 
 const UltimosLanzamientos = () => {
-  const peliculas = useFetchPeliculas("top_rated");
+  const [page, setPage] = useState (1)
+  const {peliculas, totalPages } = useFetchPeliculas("now_playing", page);
+  
+  const handleClickPrimera = () =>{
+    setPage(1)
+  }
+  const handleClickUltima = (totalPages) =>{
+    setPage(totalPages)
+  }
+  const handleClickNext = () =>{
+    setPage( page + 1)
+  } 
+  const handleClickPrev = () =>{
+    setPage( page - 1)
+  } 
   
   return (
    
@@ -44,6 +59,20 @@ const UltimosLanzamientos = () => {
        />
       ))}
       </Box>
+      <Paginado
+        sx={{
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: 100
+        }}
+        handleClickNext={handleClickNext}
+        handleClickPrev={handleClickPrev}
+        page={page} 
+        handleClickPrimera={handleClickPrimera} 
+        handleClickUltima={() => handleClickUltima(totalPages)} 
+      />
     </Box>
       
   );
