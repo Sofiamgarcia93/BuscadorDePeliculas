@@ -72,7 +72,8 @@ const UltimosLanzamientos = () => {
         page={page} 
         handleClickPrimera={handleClickPrimera} 
         handleClickUltima={() => handleClickUltima(totalPages)} 
-      />
+      >
+      </Paginado>
     </Box>
       
   );
