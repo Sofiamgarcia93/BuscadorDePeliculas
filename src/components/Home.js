@@ -15,7 +15,7 @@ const Home = () =>{
 
         <Grid item xs={12} sx={{borderColor: 'error.main'}}>
         <Box >
-        <h2>Soy el Home</h2>
+       
             <Carrusel />
         </Box>
         </Grid>

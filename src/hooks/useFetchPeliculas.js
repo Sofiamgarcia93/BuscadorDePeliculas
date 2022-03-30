@@ -1,20 +1,24 @@
 import { useState, useEffect } from 'react';
 
-const useFetchPeliculas = ( endpointFetch ) => {
+const useFetchPeliculas = ( endpointFetch, page ) => {
     const [peliculas, setPeliculas] = useState([]);
-  
+    const [totalPages, setTotalPages] = useState(0)
   
     useEffect(() => {
       
-      fetch(`https://api.themoviedb.org/3/movie/${endpointFetch}?api_key=96357f7f10ae428b53766292b46e8b8e&language=es-AR$page=1`)
+      fetch(`https://api.themoviedb.org/3/movie/${endpointFetch}?api_key=96357f7f10ae428b53766292b46e8b8e&language=en-EN&page=${page}`)
         .then(res => res.json())
         .then(data => {
           setPeliculas(data.results);
+          setTotalPages(data.total_pages);
           
         });
-    }, []);
+    }, [page]);
   
-    return peliculas;
+    return {
+      peliculas: peliculas,
+      totalPages: totalPages,
+    };
 
   };
   
