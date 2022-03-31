@@ -30,16 +30,15 @@ const Populares = () =>{
         <Box
         sx={{
           marginTop: 10,
-          height: 80,
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 1,
+          textAlign: "center",
         }}
       >
         <Typography
           sx={{
-            bgcolor: "#6fbf73",
-            color: "white",
+            color: "#424242",
           }}
           variant="h5"
           gutterBottom
@@ -51,6 +50,7 @@ const Populares = () =>{
       <Box sx={{
           display: "flex",
           flexWrap: "wrap",
+          justifyContent: "center"
         
         }}>
       {peliculas.map((pelicula) => (
@@ -64,18 +64,13 @@ const Populares = () =>{
       </Box>
 
       <Paginado
-        sx={{
-          cursor: "pointer",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: 100
-        }}
+        
         handleClickNext={handleClickNext}
         handleClickPrev={handleClickPrev}
         page={page}  
         handleClickPrimera={handleClickPrimera} 
         handleClickUltima={() => handleClickUltima(totalPages > 500 ? 500 : totalPages)} 
+        totalPages={totalPages}
       >
   </Paginado>
       

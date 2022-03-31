@@ -12,23 +12,38 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
  const App = () =>{
    return(
-
+<div>
     <BrowserRouter>
-     <Nav>
+     <Nav/>
        
-    </Nav>
+    
 
     <Routes>
-       <Route path="/" element={<Home />} />
-       <Route path="/ultimos-lanzamientos" element={<UltimosLanzamientos />} />
-       <Route path="/populares" element={<Populares />} />
-       <Route path="/BuscadorPeliculas" element={<BuscadorPeliculas />} />
-       <Route path="/detalle-pelicula/:idPelicula" element={<DetallePelicula/>} />
+       <Route 
+       path="/" 
+       element={<Home />}
+        />
+       <Route 
+       path="/ultimos-lanzamientos" 
+       element={<UltimosLanzamientos />} 
+       />
+       <Route 
+       path="/populares" 
+       element={<Populares />}
+        />
+       <Route 
+       path="/BuscadorPeliculas" 
+       element={<BuscadorPeliculas />} 
+       />
+       <Route 
+       path="/detalle-pelicula/:idPelicula" 
+       element={<DetallePelicula/>} 
+       />
      </Routes>
-      
-      
-      <Footer></Footer>
+     <Footer/>
     </BrowserRouter>
+   
+    </div>
    )
  }
 

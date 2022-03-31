@@ -15,8 +15,7 @@ const BuscadorPeliculas = () => {
       });
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=c7e318bc4679faa16a6f940e1435e019&languaje=en-EN&query=${searchParams.get("query")}&page=1`
-    )
+      `https://api.themoviedb.org/3/search/movie?api_key=c7e318bc4679faa16a6f940e1435e019&languaje=en-EN&query=${searchParams.get("query")}&page=1`)
       .then((res) => res.json())
       .then((data) => setPeliculas(data.results));
   }, [searchParams]);
