@@ -14,7 +14,10 @@ const Footer = () =>{
           flexGrow: 1,
           backgroundColor: "#424242",
           textAlign: "center",
-          height: 80,
+          height: 90,
+          position: "absolute",
+          bottom: 0,
+          width: "100%",
         }}
       >
       
