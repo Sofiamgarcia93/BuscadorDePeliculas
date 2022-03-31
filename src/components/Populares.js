@@ -72,7 +72,7 @@ const Populares = () =>{
         handleClickUltima={() => handleClickUltima(totalPages > 500 ? 500 : totalPages)} 
         totalPages={totalPages}
       >
-  </Paginado>
+      </Paginado>
       
     </Box>
       
