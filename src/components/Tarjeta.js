@@ -16,7 +16,7 @@ const Tarjeta = ( {titulo, urlImg, linkTarjeta}) => {
         heigth: 370,
         m: 2,
         display: "flex",
-        flexDirection: "column;",
+        flexDirection: "column",
       }}
     >
       <CardMedia
@@ -35,7 +35,7 @@ const Tarjeta = ( {titulo, urlImg, linkTarjeta}) => {
             whiteSpace: "nowrap",
             textOverFlow: "ellipsis",
             overflow: "hidden",
-            textAling: "center",
+          
           }}
         >
           {titulo}
