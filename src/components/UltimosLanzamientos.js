@@ -27,16 +27,15 @@ const UltimosLanzamientos = () => {
       <Box
         sx={{
           marginTop: 10,
-          height: 80,
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 1,
+          textAlign: "center",
         }}
       >
         <Typography
           sx={{
-            bgcolor: "#6fbf73",
-            color: "white",
+            color: "#424242",
           }}
           variant="h5"
           gutterBottom
@@ -48,6 +47,7 @@ const UltimosLanzamientos = () => {
       <Box sx={{
           display: "flex",
           flexWrap: "wrap",
+          justifyContent: "center"
         
         }}>
       {peliculas.map((pelicula) => (
@@ -72,6 +72,7 @@ const UltimosLanzamientos = () => {
         page={page} 
         handleClickPrimera={handleClickPrimera} 
         handleClickUltima={() => handleClickUltima(totalPages)} 
+        totalPages={totalPages}
       >
       </Paginado>
     </Box>

@@ -8,6 +8,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IconButton from "@mui/material/IconButton";
 
 const Paginado = ({ handleClickNext, handleClickPrev, page, handleClickPrimera, handleClickUltima, totalPages }) => {
+  console.log(totalPages)
   return (
     <Box
       sx={{
@@ -37,7 +38,7 @@ const Paginado = ({ handleClickNext, handleClickPrev, page, handleClickPrimera, 
       <IconButton 
       aria-label="pagina siguiente" 
       onClick={handleClickNext}
-      disabled={totalPages > 500 ? page === 500 : page == totalPages}>
+      disabled={totalPages >= 500 ? page === 500 : page === totalPages}>
         <ArrowForwardIosIcon />
       </IconButton>
       <IconButton 

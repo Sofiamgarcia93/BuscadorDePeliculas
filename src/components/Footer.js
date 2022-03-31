@@ -5,17 +5,19 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import IconButton from "@mui/material/IconButton";
 
+
+
 const Footer = () =>{
     return(
         <Box
         sx={{
           flexGrow: 1,
-          flexDirection: "column",
+          backgroundColor: "#424242",
           textAlign: "center",
-          bgcolor: "#424242",
           height: 80,
         }}
       >
+      
         <Typography
           sx={{
             color: "white",
@@ -48,6 +50,8 @@ const Footer = () =>{
         >
           <EmailIcon  fontSize='medium'></EmailIcon>
         </IconButton>
+
+       
       </Box>
     
     )
