@@ -32,7 +32,7 @@ const Listados = ({ titulo, url }) => {
     >
       <Box
         sx={{
-          bgcolor:'#424242',
+          bgcolor:'#37474f',
           height: 80,
           display: "flex",
           alignItems: "center",
@@ -42,7 +42,6 @@ const Listados = ({ titulo, url }) => {
       >
         <Typography
           sx={{
-            bgcolor:'#424242',
             color: "white",
           }}
           variant="h5"
@@ -53,8 +52,9 @@ const Listados = ({ titulo, url }) => {
         </Typography>
       </Box>
        <Box
-       sx={{overflow: "scroll", 
-       height: "50vh" }}>   
+       sx={{overflowY: "scroll",
+       height: "50vh",
+       backgroundColor:"#bdbdbd" }}>   
       {listaPeliculas.map((pelicula) => (
         <List>
           <ListItem button>

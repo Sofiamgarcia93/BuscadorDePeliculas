@@ -1,15 +1,16 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Carrusel from "./Carrusel";
 import Listados from "./Listados";
-import "./Home.css";
 import Box from '@mui/material/Box';
+
 
 
 const Home = () =>{
     return(
-       <Box> 
+
+      <Box>
             <Carrusel />
-        <Box
+        <Box>
         sx={{
             display: "flex",
             flexWrap: 'wrap',

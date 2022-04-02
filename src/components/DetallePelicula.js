@@ -38,6 +38,8 @@ const DetallePelicula = () =>{
             display: "flex",
             alignItems: "center",
             px: 16,
+            py: 16,
+            
           }}
         >
           <Box sx={{ display: "flex" }}>
