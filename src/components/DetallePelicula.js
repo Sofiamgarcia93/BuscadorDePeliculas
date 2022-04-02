@@ -28,6 +28,7 @@ const DetallePelicula = () =>{
           backgroundSize: "cover",
           height: "90vh",
           display: "flex",
+          p: 5,
         }}
       >
         <Card
