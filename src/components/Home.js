@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Carrusel from "./Carrusel";
 import Listados from "./Listados";
-import "./Home.css";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid'
+
 
 const Home = () =>{
     return(
@@ -13,7 +13,7 @@ const Home = () =>{
         alignItems="center"
         >
 
-        <Grid item xs={12} sx={{borderColor: 'error.main'}}>
+        <Grid item xs={12}>
         <Box >
        
             <Carrusel />

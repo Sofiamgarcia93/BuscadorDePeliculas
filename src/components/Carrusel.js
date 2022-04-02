@@ -19,7 +19,7 @@ const Carrusel = () => {
         slidesToShow={1}
         autoplay={true}
         autoplaySpeed={2000}
-        arrows={true}
+        
       >
         {peliculas.map((pelicula) => (
           <Box
@@ -64,8 +64,9 @@ const Carrusel = () => {
                   </Typography>
                 
                   <Link to={`/detalle-pelicula/${pelicula.id}`} style={{ textDecoration: 'none' }}>
-                    <Button size="small" variant="contained" color="secondary"
-                    sx={{  textDecorationStyle:"none",}}>
+                    <Button size="small" variant="contained"
+                    sx={{  textDecorationStyle:"none",
+                    backgroundColor:"#78909c"}}>
                       Ver mas..
                     </Button>
                   </Link>
