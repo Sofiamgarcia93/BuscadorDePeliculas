@@ -2,48 +2,38 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Carrusel from "./Carrusel";
 import Listados from "./Listados";
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid'
+
 
 
 const Home = () =>{
     return(
-       <div> 
-        <Grid container spacing ={4} direction="row"
-        justifyContent="center"
-        alignItems="center"
-        >
 
-        <Grid item xs={12}>
-        <Box >
-       
+      <Box>
             <Carrusel />
-        </Box>
-        </Grid>
-
-        <Grid item xs={4}>
         <Box>
-
+        sx={{
+            display: "flex",
+            flexWrap: 'wrap',
+            justifyContent: 'space-around',
+            p: 5,
+        }}>
             <Listados 
             titulo="Peliculas Populares"
             url="popular"
             />
-        </Box>
-        </Grid>
 
-        <Grid item xs={4}>
-        <Box>
             <Listados
             titulo="Peliculas Mejor Puntuadas"
             url="top_rated"
             />
         </Box>
-        </Grid>
+      
 
 
             
         
-      </Grid>
-      </div>
+    
+      </Box>
     )
 }
 
