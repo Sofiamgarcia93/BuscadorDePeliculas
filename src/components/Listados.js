@@ -53,7 +53,7 @@ const Listados = ({ titulo, url }) => {
         </Typography>
       </Box>
        <Box
-       sx={{overflow: "scroll", 
+       sx={{overflowY: "scroll",
        height: "50vh" }}>   
       {listaPeliculas.map((pelicula) => (
         <List>
