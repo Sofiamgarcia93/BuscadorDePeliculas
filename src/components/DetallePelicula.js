@@ -28,7 +28,6 @@ const DetallePelicula = () =>{
           backgroundSize: "cover",
           height: "90vh",
           display: "flex",
-          p: 5,
         }}
       >
         <Card
@@ -39,6 +38,8 @@ const DetallePelicula = () =>{
             display: "flex",
             alignItems: "center",
             px: 16,
+            py: 16,
+            
           }}
         >
           <Box sx={{ display: "flex" }}>

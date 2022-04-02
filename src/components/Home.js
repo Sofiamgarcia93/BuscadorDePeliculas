@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Carrusel from "./Carrusel";
 import Listados from "./Listados";
-import "./Home.css";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid'
 import imagenFondo from "../imagenes/image-fondo.jpg"
@@ -12,7 +11,6 @@ const Home = () =>{
         <Grid container spacing ={4} direction="row"
         justifyContent="center"
         alignItems="center"
-        sx={{ backgroundImage:`url(${imagenFondo})` }}
         >
 
         <Grid item xs={12}>
