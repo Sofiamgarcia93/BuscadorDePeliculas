@@ -17,11 +17,12 @@ const Tarjeta = ( {titulo, urlImg, linkTarjeta}) => {
         m: 2,
         display: "flex",
         flexDirection: "column",
+        alignItems: "center"
       }}
     >
       <CardMedia
         component="img"
-        height="140"
+        height="350"
         image={urlImg}
         alt="imagen de pelicula"
       />

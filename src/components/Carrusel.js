@@ -40,13 +40,13 @@ const Carrusel = () => {
               sx={{
                 maxWidth: 950,
                 bgcolor: '#FFFFFF',
-                opacity: [0.9, 0.8, 0.7],
+                opacity: [0.5, 0.5, 0.5],
                 boxShadow: 1,
                 display: "flex !important",
                 alignItems: "center !important",
                 flexDirection: "column !important",
                 textAlign: "center !important",
-                padding: 3,
+                p: 3,
                 m: 1,
               }}
             >
@@ -56,7 +56,12 @@ const Carrusel = () => {
                     {pelicula.title}
                   </Typography>
                   <Typography variant="h5"
-                    sx={{ fontSize: 16 }}
+                    sx={{ fontSize:{
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+
+                    } }}
                     color="text.secondary"
                     gutterBottom
                   >
@@ -66,7 +71,13 @@ const Carrusel = () => {
                   <Link to={`/detalle-pelicula/${pelicula.id}`} style={{ textDecoration: 'none' }}>
                     <Button size="small" variant="contained"
                     sx={{  textDecorationStyle:"none",
-                    backgroundColor:"#78909c"}}>
+                    backgroundColor:"#78909c",
+                    fontSize:{
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+
+                    }}}>
                       Ver mas..
                     </Button>
                   </Link>

@@ -46,8 +46,11 @@ const Listados = ({ titulo, url }) => {
           sx={{
             color: "white",
             p: 3,
+            fontSize:{
+              xs: "16px",
+              sm: "20px",
+              md: "30px",}
           }}
-          variant="h5"
           
           component="div"
         >
@@ -55,7 +58,11 @@ const Listados = ({ titulo, url }) => {
         </Typography>
       </Box>
       <Box
-        sx={{ overflowY: "scroll", height: "50vh", width: "100%", backgroundColor: "#bdbdbd" }}
+        sx={{ overflowY: "scroll", height: "50vh", width: "100%", backgroundColor: "#bdbdbd",
+        fontSize:{
+          xs: "16px",
+          sm: "20px",
+          md: "30px",} }}
       >
         {listaPeliculas.map((pelicula) => (
           <List>

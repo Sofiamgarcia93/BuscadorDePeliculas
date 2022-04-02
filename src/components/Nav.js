@@ -4,9 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import MenuIcon from '@mui/icons-material/Menu';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
-import LocalActivityIcon from '@mui/icons-material/LocalActivity';
 import MenuDesplegable from "./MenuDesplegable"
 const Nav = () =>{
     return (
@@ -22,23 +20,31 @@ const Nav = () =>{
               <Box sx={{
                display: "flex",
                flexDirection: "row",
+               justifyContent: "center",
+               alignItem: "center",
              }}>
-              <LocalActivityIcon>
+             
               <LiveTvIcon
-
-                size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 2 }}
-              >
-       
-              </LiveTvIcon>
-              </LocalActivityIcon>
-              <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+                sx={{ mt: 0.5, mr: 2,
+                  fontSize:{
+                    xs: "16px",
+                    sm: "20px",
+                    md: "30px",}}}
+              />
+             
+            
+              <Typography  component="div" sx={{ flexGrow: 1,
+                fontSize:{
+                  xs: "16px",
+                  sm: "20px",
+                  md: "30px",} }}>
                 Buscador  de Películas
               </Typography>
               </Box>
+
               <Box
               sx={{
                 display:{ 
