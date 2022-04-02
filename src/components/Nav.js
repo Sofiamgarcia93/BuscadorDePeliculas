@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import TheatersIcon from '@mui/icons-material/Theaters';
 import LocalActivityIcon from '@mui/icons-material/LocalActivity';
-
+import MenuDesplegable from "./MenuDesplegable"
 const Nav = () =>{
     return (
               
@@ -15,7 +15,14 @@ const Nav = () =>{
           <AppBar 
           position="fixed"
           sx={{ bgcolor: "#424242"}}>
-            <Toolbar>
+            <Toolbar sx={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}>
+              <Box sx={{
+               display: "flex",
+               flexDirection: "row",
+             }}>
               <LocalActivityIcon
                 size="large"
                 edge="start"
@@ -28,6 +35,15 @@ const Nav = () =>{
               <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
                 Buscador Películas
               </Typography>
+              </Box>
+              <Box
+              sx={{
+                display:{ 
+                  xs: "none",
+                  sm: "none",
+                  md: "inline"}
+              
+              }}>
               <Button color="inherit">
                 <Link to="/"  style={{ textDecoration: "none", color: "white" }}> Home </Link>
               </Button>
@@ -43,6 +59,16 @@ const Nav = () =>{
               <Button>
               <Link to="/BuscadorPeliculas"  style={{ textDecoration: "none", color: "white" }}>Buscar</Link>
               </Button>
+              </Box>
+              <Box
+              sx={{
+                display:{ 
+                  xs: "inline",
+                  sm: "inline",
+                  md: "none"}
+              }}>
+                <MenuDesplegable/>
+              </Box>
             </Toolbar>
           </AppBar>
         </Box>
