@@ -3,7 +3,7 @@ import Carrusel from "./Carrusel";
 import Listados from "./Listados";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid'
-import imagenFondo from "../imagenes/image-fondo.jpg"
+
 
 const Home = () =>{
     return(
