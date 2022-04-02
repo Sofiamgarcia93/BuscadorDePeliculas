@@ -24,52 +24,59 @@ const Listados = ({ titulo, url }) => {
       .then((data) => setListaPeliculas(data.results));
   }, []);
   return (
-    <Box>
+    <Box
+    sx={{
+      width:{
+        xs:"80%",
+        sm: "80%",
+        md: "40%",
+      },
+      m: 1, 
+
+    }}>
       <Box
         sx={{
-          bgcolor:'#37474f',
-          height: 80,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          bgcolor: "#37474f",
+          textAlign: "center",
           borderRadius: 1,
+          width: "100%",
         }}
       >
         <Typography
           sx={{
             color: "white",
+            p: 3,
           }}
           variant="h5"
-          gutterBottom
+          
           component="div"
         >
           {titulo}
         </Typography>
       </Box>
-       <Box
-       sx={{overflowY: "scroll",
-       height: "50vh",
-       backgroundColor:"#bdbdbd" }}>   
-      {listaPeliculas.map((pelicula) => (
-        <List>
-          <ListItem button>
-            <ListItemAvatar>
-              <Avatar
-                alt={`imagen de la pelicula`}
-                src={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
-              />
-            </ListItemAvatar>
-            <ListItemText>{pelicula.title}</ListItemText>
-            <Link to={`/detalle-pelicula/${pelicula.id}`}>
-            <ListItemIcon>
-              <ArrowForwardIosIcon></ArrowForwardIosIcon>
-            </ListItemIcon>
-            </Link>
-          </ListItem>
+      <Box
+        sx={{ overflowY: "scroll", height: "50vh", width: "100%", backgroundColor: "#bdbdbd" }}
+      >
+        {listaPeliculas.map((pelicula) => (
+          <List>
+            <ListItem button>
+              <ListItemAvatar>
+                <Avatar
+                  alt={`imagen de la pelicula`}
+                  src={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
+                />
+              </ListItemAvatar>
+              <ListItemText>{pelicula.title}</ListItemText>
+              <Link to={`/detalle-pelicula/${pelicula.id}`}>
+                <ListItemIcon>
+                  <ArrowForwardIosIcon></ArrowForwardIosIcon>
+                </ListItemIcon>
+              </Link>
+            </ListItem>
 
-          <Divider />
-        </List>
-      ))}
+            <Divider />
+          </List>
+        ))}
       </Box>
     </Box>
   );
