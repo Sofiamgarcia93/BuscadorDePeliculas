@@ -24,12 +24,7 @@ const Listados = ({ titulo, url }) => {
       .then((data) => setListaPeliculas(data.results));
   }, []);
   return (
-    <Box
-      sx={{
-        height: "450px",
-        borderBottom: `1px  solid`,
-      }}
-    >
+    <Box>
       <Box
         sx={{
           bgcolor:'#37474f',

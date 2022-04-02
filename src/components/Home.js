@@ -10,7 +10,7 @@ const Home = () =>{
 
       <Box>
             <Carrusel />
-        <Box>
+        <Box
         sx={{
             display: "flex",
             flexWrap: 'wrap',
@@ -27,11 +27,6 @@ const Home = () =>{
             url="top_rated"
             />
         </Box>
-      
-
-
-            
-        
     
       </Box>
     )

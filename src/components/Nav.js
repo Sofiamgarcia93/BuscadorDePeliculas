@@ -34,6 +34,7 @@ const Nav = () =>{
               >
        
               </LiveTvIcon>
+              </LocalActivityIcon>
               <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
                 Buscador  de Películas
               </Typography>
