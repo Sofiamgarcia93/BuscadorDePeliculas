@@ -36,12 +36,14 @@ const Populares = () =>{
           textAlign: "center",
         }}
       >
-        <Typography
+     <Typography
           sx={{
             color: "#424242",
+            bgcolor: "#fafafa",
+            opacity: [0.9, 0.9, 0.8],
           }}
           variant="h5"
-          gutterBottom
+          letterSpacing={6}
           component="div"
         >
           Populares

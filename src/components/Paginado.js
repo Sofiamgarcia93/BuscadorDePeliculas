@@ -12,12 +12,18 @@ const Paginado = ({ handleClickNext, handleClickPrev, page, handleClickPrimera, 
   return (
     <Box
       sx={{
-        py: 10,
+        mt: 1,
+        mb: 1,
         display: "flex",
         flexDirection: "row",
         alingContect: "space-around",
         justifyContent: "center",
+        color: "#424242",
+        bgcolor: "#fafafa",
+        opacity: [0.9, 0.9, 0.8],
       }}
+      
+      letterSpacing={6}
     >
       <IconButton 
       aria-label="volver a primer pagina"
@@ -32,8 +38,8 @@ const Paginado = ({ handleClickNext, handleClickPrev, page, handleClickPrimera, 
       </IconButton>
       
       <Typography
-      variant="h5" gutterBottom component="div" sx={{ m: 2 }}
-      >Page: {page}</Typography>
+      variant="h6" gutterBottom component="div" sx={{ m: 2 }}
+      >Pagina: {page}</Typography>
 
       <IconButton 
       aria-label="pagina siguiente" 

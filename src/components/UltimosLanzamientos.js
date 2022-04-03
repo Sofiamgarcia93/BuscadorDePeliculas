@@ -7,7 +7,7 @@ import { useState } from "react"
 
 const UltimosLanzamientos = () => {
   const [page, setPage] = useState (1)
-  const {peliculas, totalPages } = useFetchPeliculas("now_playing", page);
+  const {peliculas, totalPages } = useFetchPeliculas("upcoming", page);
   
   const handleClickPrimera = () =>{
     setPage(1)
@@ -36,9 +36,11 @@ const UltimosLanzamientos = () => {
         <Typography
           sx={{
             color: "#424242",
+            bgcolor: "#fafafa",
+            opacity: [0.9, 0.9, 0.8],
           }}
           variant="h5"
-          gutterBottom
+          letterSpacing={6}
           component="div"
         >
           Ultimos Lanzamientos
