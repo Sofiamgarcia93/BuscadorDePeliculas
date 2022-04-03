@@ -15,7 +15,7 @@ const Carrusel = () => {
     <Box>
       <Slider
         dots={true}
-        arrows={true}
+        arrows={false}
         slidesToShow={1}
         autoplay={true}
         autoplaySpeed={2000}
