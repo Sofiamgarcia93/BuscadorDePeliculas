@@ -4,11 +4,11 @@
 
 <img src="https://media0.giphy.com/media/gLREPOkkRAGGCGNKbZ/giphy.gif?cid=ecf05e47eq5v1f29yzieccr39ruwx8dsgi2ijmrk0fbih3pu&rid=giphy.gif&ct=s" width = "100%">
 
-## <a href=""> Link del Buscador </a>
+## <a href="https://www.buscadorpeliculassofi.netlify.app"> Link del Buscador </a>
 
 <img src="https://media0.giphy.com/media/J4TxHPk4BMjuo0UwbI/giphy.gif?cid=ecf05e472i2vx68mf51d75gj115drkm3a49pimy091p4y2ne&rid=giphy.gif&ct=s" width="40%"/>
 
-<img src=".../imagenes/image-readme.jpg" width="50%"/>
+<img src="https://d500.epimg.net/cincodias/imagenes/2020/12/31/lifestyle/1609408585_467254_1609408795_noticia_normal.jpg" width="100%"/>
 
 ### El buscador:
 
