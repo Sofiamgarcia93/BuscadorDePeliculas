@@ -30,15 +30,15 @@ const Tarjeta = ( {titulo, urlImg, linkTarjeta}) => {
       />
       <CardContent>
         <Typography
-          
-          variant="h6"
           sx={{
             width: 300,
             whiteSpace: "nowrap",
-            textOverFlow: "ellipsis",
+            textOverflow: "ellipsis",
             overflow: "hidden",
             textAlign: "center",
             fontWeight: 700,
+            pl: 1.5,
+            pr: 1.5,
           
           }}
         >

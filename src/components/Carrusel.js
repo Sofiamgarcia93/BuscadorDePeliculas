@@ -72,6 +72,11 @@ const Carrusel = () => {
                     <Button size="small" variant="contained"
                     sx={{  textDecorationStyle:"none",
                     backgroundColor:"#78909c",
+                    ":hover": {
+                      bgcolor: "#bdbdbd",
+                      color: "#424242",
+                      boxShadow: 4,
+                    },
                     fontSize:{
                       xs: "10px",
                       sm: "12px",
