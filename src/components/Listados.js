@@ -76,7 +76,16 @@ const Listados = ({ titulo, url }) => {
               <ListItemText>{pelicula.title}</ListItemText>
               <Link to={`/detalle-pelicula/${pelicula.id}`}>
                 <ListItemIcon>
-                  <ArrowForwardIosIcon></ArrowForwardIosIcon>
+                  <ArrowForwardIosIcon
+                     sx={{
+                      color: "#424242",
+                      ":hover": {
+                        bgcolor: "#424242",
+                        color: "#FFFFFF",
+                        boxShadow: 2,
+                        borderRadius: 4,
+                      },
+                    }}></ArrowForwardIosIcon>
                 </ListItemIcon>
               </Link>
             </ListItem>
