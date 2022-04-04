@@ -8,7 +8,7 @@
 
 <img src="https://media0.giphy.com/media/J4TxHPk4BMjuo0UwbI/giphy.gif?cid=ecf05e472i2vx68mf51d75gj115drkm3a49pimy091p4y2ne&rid=giphy.gif&ct=s" width="40%"/>
 
-<img src="../imagenes/image-readme.jpg" width="50%"/>
+<img src=".../imagenes/image-readme.jpg" width="50%"/>
 
 ### El buscador:
 
