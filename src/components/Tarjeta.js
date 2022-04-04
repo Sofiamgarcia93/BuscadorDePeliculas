@@ -12,12 +12,14 @@ const Tarjeta = ( {titulo, urlImg, linkTarjeta}) => {
   return (
     <Card
       sx={{
-        width: 250,
+        width: 300,
         heigth: 370,
         m: 2,
         display: "flex",
         flexDirection: "column",
-        alignItems: "center"
+        alignItems: "center",
+        textAlign: "center",
+        bgcolor: "#bdbdbd",
       }}
     >
       <CardMedia
@@ -28,14 +30,15 @@ const Tarjeta = ( {titulo, urlImg, linkTarjeta}) => {
       />
       <CardContent>
         <Typography
-          gutterBottom
+          
           variant="h6"
-          component="div"
           sx={{
-            width: 350,
+            width: 300,
             whiteSpace: "nowrap",
             textOverFlow: "ellipsis",
             overflow: "hidden",
+            textAlign: "center",
+            fontWeight: 700,
           
           }}
         >

@@ -18,7 +18,7 @@ const Carrusel = () => {
         arrows={false}
         slidesToShow={1}
         autoplay={true}
-        autoplaySpeed={2000}
+        autoplaySpeed={1500}
         
       >
         {peliculas.map((pelicula) => (
