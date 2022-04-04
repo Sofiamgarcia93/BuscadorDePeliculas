@@ -75,7 +75,7 @@ const DetallePelicula = () => {
                     sm: "40px",
                     md: "40px",
                   },
-                   textAlign: "center",
+                  textAlign: "center",
                 }}
               >
                 {peliculaDetalle.title}{" "}

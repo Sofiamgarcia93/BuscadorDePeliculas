@@ -22,7 +22,7 @@ const BuscadorPeliculas = () => {
       .then((res) => res.json())
       .then((data) => setPeliculas(data.results));
   }, [searchParams]);
-  console.log(peliculas);
+  
 
   const handleChange = (e) => {
     setValorDelInput(e.target.value);

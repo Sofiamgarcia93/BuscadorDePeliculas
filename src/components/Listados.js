@@ -13,7 +13,6 @@ import {
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Link } from "react-router-dom";
 
-
 const Listados = ({ titulo, url }) => {
   const [listaPeliculas, setListaPeliculas] = useState([]);
   useEffect(() => {
@@ -25,15 +24,15 @@ const Listados = ({ titulo, url }) => {
   }, []);
   return (
     <Box
-    sx={{
-      width:{
-        xs:"80%",
-        sm: "80%",
-        md: "40%",
-      },
-      m: 1, 
-
-    }}>
+      sx={{
+        width: {
+          xs: "80%",
+          sm: "80%",
+          md: "40%",
+        },
+        m: 1,
+      }}
+    >
       <Box
         sx={{
           bgcolor: "#37474f",
@@ -46,23 +45,29 @@ const Listados = ({ titulo, url }) => {
           sx={{
             color: "white",
             p: 3,
-            fontSize:{
+            fontSize: {
               xs: "16px",
               sm: "20px",
-              md: "30px",}
+              md: "30px",
+            },
           }}
-          
           component="div"
         >
           {titulo}
         </Typography>
       </Box>
       <Box
-        sx={{ overflowY: "scroll", height: "50vh", width: "100%", backgroundColor: "#bdbdbd",
-        fontSize:{
-          xs: "16px",
-          sm: "20px",
-          md: "30px",} }}
+        sx={{
+          overflowY: "scroll",
+          height: "50vh",
+          width: "100%",
+          backgroundColor: "#bdbdbd",
+          fontSize: {
+            xs: "16px",
+            sm: "20px",
+            md: "30px",
+          },
+        }}
       >
         {listaPeliculas.map((pelicula) => (
           <List>
@@ -77,7 +82,7 @@ const Listados = ({ titulo, url }) => {
               <Link to={`/detalle-pelicula/${pelicula.id}`}>
                 <ListItemIcon>
                   <ArrowForwardIosIcon
-                     sx={{
+                    sx={{
                       color: "#424242",
                       ":hover": {
                         bgcolor: "#424242",
@@ -85,7 +90,8 @@ const Listados = ({ titulo, url }) => {
                         boxShadow: 2,
                         borderRadius: 4,
                       },
-                    }}></ArrowForwardIosIcon>
+                    }}
+                  ></ArrowForwardIosIcon>
                 </ListItemIcon>
               </Link>
             </ListItem>
