@@ -1,16 +1,14 @@
 import Box from "@mui/material/Box";
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import useFetchPeliculas from "../hooks/useFetchPeliculas"
+import useFetchPeliculas from "../hooks/useFetchPeliculas";
 import { Link } from "react-router-dom";
 
-
-
 const Carrusel = () => {
-  const {peliculas, totalPages } = useFetchPeliculas("now_playing", 1);
+  const { peliculas } = useFetchPeliculas("now_playing", 1);
   return (
     <Box>
       <Slider
@@ -19,7 +17,6 @@ const Carrusel = () => {
         slidesToShow={1}
         autoplay={true}
         autoplaySpeed={1500}
-        
       >
         {peliculas.map((pelicula) => (
           <Box
@@ -29,7 +26,7 @@ const Carrusel = () => {
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               height: "60vh",
-              display: "flex !important",       
+              display: "flex !important",
               flexDirection: "column !important",
               alignContent: "center !important",
               justifyContent: "flex-end !important",
@@ -39,7 +36,7 @@ const Carrusel = () => {
             <Box
               sx={{
                 maxWidth: 950,
-                bgcolor: '#FFFFFF',
+                bgcolor: "#FFFFFF",
                 opacity: [0.5, 0.5, 0.5],
                 boxShadow: 1,
                 display: "flex !important",
@@ -50,43 +47,51 @@ const Carrusel = () => {
                 m: 1,
               }}
             >
-              <Box
-              sx={{color: "text.primary"}}>
-                  <Typography variant="h5" component="div" >
-                    {pelicula.title}
-                  </Typography>
-                  <Typography variant="h5"
-                    sx={{ fontSize:{
+              <Box sx={{ color: "text.primary" }}>
+                <Typography variant="h5" component="div">
+                  {pelicula.title}
+                </Typography>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    fontSize: {
                       xs: "10px",
                       sm: "12px",
                       md: "16px",
-
-                    } }}
-                    color="text.secondary"
-                    gutterBottom
-                  >
-                    {pelicula.overview}
-                  </Typography>
-                
-                  <Link to={`/detalle-pelicula/${pelicula.id}`} style={{ textDecoration: 'none' }}>
-                    <Button size="small" variant="contained"
-                    sx={{  textDecorationStyle:"none",
-                    backgroundColor:"#78909c",
-                    ":hover": {
-                      bgcolor: "#bdbdbd",
-                      color: "#424242",
-                      boxShadow: 4,
                     },
-                    fontSize:{
-                      xs: "10px",
-                      sm: "12px",
-                      md: "16px",
+                  }}
+                  color="text.secondary"
+                  gutterBottom
+                >
+                  {pelicula.overview}
+                </Typography>
 
-                    }}}>
-                      Ver mas..
-                    </Button>
-                  </Link>
-                </Box>
+                <Link
+                  to={`/detalle-pelicula/${pelicula.id}`}
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button
+                    size="small"
+                    variant="contained"
+                    sx={{
+                      textDecorationStyle: "none",
+                      backgroundColor: "#78909c",
+                      ":hover": {
+                        bgcolor: "#bdbdbd",
+                        color: "#424242",
+                        boxShadow: 4,
+                      },
+                      fontSize: {
+                        xs: "10px",
+                        sm: "12px",
+                        md: "16px",
+                      },
+                    }}
+                  >
+                    Ver mas..
+                  </Button>
+                </Link>
+              </Box>
             </Box>
           </Box>
         ))}

@@ -1,8 +1,8 @@
 import * as React from "react";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { IconButton } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import { IconButton } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
 const MenuDesplegable = () => {
@@ -36,16 +36,34 @@ const MenuDesplegable = () => {
         }}
       >
         <MenuItem onClick={handleClose}>
-            <Link to="/"  style={{ textDecoration: "none", color: "black" }}> Home </Link>
+          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            {" "}
+            Home{" "}
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-            <Link to="/ultimos-lanzamientos"  style={{ textDecoration: "none", color: "black" }}>Ultimos Lanzamientos</Link>
+          <Link
+            to="/ultimos-lanzamientos"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Ultimos Lanzamientos
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-            <Link to="/populares"  style={{ textDecoration: "none", color: "black" }}>Populares </Link>
+          <Link
+            to="/populares"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Populares{" "}
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-            <Link to="/BuscadorPeliculas"  style={{ textDecoration: "none", color: "black" }}>Buscar</Link>
+          <Link
+            to="/BuscadorPeliculas"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Buscar
+          </Link>
         </MenuItem>
       </Menu>
     </div>
