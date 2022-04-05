@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import CardActions from "@mui/material/CardActions";
 import { IconButton } from "@mui/material";
 
-const Tarjeta = ({ key, titulo, urlImg, linkTarjeta }) => {
+const Tarjeta = ({  titulo, urlImg, linkTarjeta }) => {
   return (
     <Card
       sx={{
