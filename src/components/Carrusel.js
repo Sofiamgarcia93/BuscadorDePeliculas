@@ -8,7 +8,7 @@ import useFetchPeliculas from "../hooks/useFetchPeliculas";
 import { Link } from "react-router-dom";
 
 const Carrusel = () => {
-  const { peliculas, totalPages } = useFetchPeliculas("now_playing", 1);
+  const { peliculas } = useFetchPeliculas("now_playing", 1);
   return (
     <Box>
       <Slider

@@ -21,7 +21,7 @@ const Listados = ({ titulo, url }) => {
     )
       .then((res) => res.json())
       .then((data) => setListaPeliculas(data.results));
-  }, []);
+  }, [url]);
   return (
     <Box
       sx={{
@@ -70,8 +70,8 @@ const Listados = ({ titulo, url }) => {
         }}
       >
         {listaPeliculas.map((pelicula) => (
-          <List>
-            <ListItem button>
+          <List key={pelicula.id}>
+            <ListItem button >
               <ListItemAvatar>
                 <Avatar
                   alt={`imagen de la pelicula`}
