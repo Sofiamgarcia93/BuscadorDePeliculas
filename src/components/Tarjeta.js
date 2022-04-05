@@ -21,7 +21,7 @@ const Tarjeta = ({ key, titulo, urlImg, linkTarjeta }) => {
         textAlign: "center",
         bgcolor: "#bdbdbd",
       }}
-      key={key}
+     
     >
       <CardMedia
         component="img"
