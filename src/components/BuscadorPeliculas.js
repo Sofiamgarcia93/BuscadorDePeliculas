@@ -22,7 +22,6 @@ const BuscadorPeliculas = () => {
       .then((res) => res.json())
       .then((data) => setPeliculas(data.results));
   }, [searchParams]);
-  
 
   const handleChange = (e) => {
     setValorDelInput(e.target.value);
@@ -93,6 +92,7 @@ const BuscadorPeliculas = () => {
           peliculas.map((pelicula) => {
             return (
               <Tarjeta
+                key={pelicula.id}
                 titulo={pelicula.title}
                 urlImg={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
                 linkTarjeta={`/detalle-pelicula/${pelicula.id}`}
