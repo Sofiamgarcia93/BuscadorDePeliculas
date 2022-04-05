@@ -4,7 +4,7 @@
 
 <img src="https://media0.giphy.com/media/gLREPOkkRAGGCGNKbZ/giphy.gif?cid=ecf05e47eq5v1f29yzieccr39ruwx8dsgi2ijmrk0fbih3pu&rid=giphy.gif&ct=s" width = "100%">
 
-## <a href="https://www.buscadorpeliculassofi.netlify.app"> Link del Buscador </a>
+## <a href="https://buscadorpeliculasgarciasofia.netlify.app/"> Link del Buscador </a>
 
 <img src="https://media0.giphy.com/media/J4TxHPk4BMjuo0UwbI/giphy.gif?cid=ecf05e472i2vx68mf51d75gj115drkm3a49pimy091p4y2ne&rid=giphy.gif&ct=s" width="40%"/>
 
