@@ -1,3 +1,4 @@
+import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
@@ -5,7 +6,6 @@ import Populares from "./components/Populares";
 import BuscadorPeliculas from "./components/BuscadorPeliculas";
 import UltimosLanzamientos from "./components/UltimosLanzamientos";
 import DetallePelicula from "./components/DetallePelicula";
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
