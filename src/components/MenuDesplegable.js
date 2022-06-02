@@ -15,6 +15,8 @@ const MenuDesplegable = () => {
     setAnchorEl(null);
   };
 
+  // muy bien resuelto este menu
+
   return (
     <div>
       <IconButton
@@ -36,6 +38,8 @@ const MenuDesplegable = () => {
         }}
       >
         <MenuItem onClick={handleClose}>
+          {/* el link deberia rodear a menuItem, y no al reves, asi el espacio donde hacer click es mas amplio
+          (si hago click fuera del texto el link no funciona) */}
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
             {" "}
             Home{" "}

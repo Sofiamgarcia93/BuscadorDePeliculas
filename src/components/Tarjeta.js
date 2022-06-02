@@ -27,6 +27,7 @@ const Tarjeta = ({  titulo, urlImg, linkTarjeta }) => {
         component="img"
         height="350"
         image={urlImg}
+        // este alt no le sirve de nada a un usuario que necesita el lector de pantalla: usa el titulo de la peli
         alt="imagen de pelicula"
       />
       <CardContent>

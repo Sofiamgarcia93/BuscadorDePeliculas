@@ -15,6 +15,7 @@ const Paginado = ({
   handleClickUltima,
   totalPages,
 }) => {
+  // muy bien resuelto este componente!!
   return (
     <Box
       sx={{
