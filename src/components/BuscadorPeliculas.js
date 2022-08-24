@@ -13,6 +13,8 @@ const BuscadorPeliculas = () => {
   const [searchParams, setSearchParams] = useSearchParams({
     query: "",
   });
+
+  // con unos poquitos cambios en tu hook, este fetch podria estar ahi! 
   useEffect(() => {
     fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=c7e318bc4679faa16a6f940e1435e019&languaje=en-EN&query=${searchParams.get(
@@ -87,13 +89,16 @@ const BuscadorPeliculas = () => {
           flexWrap: "wrap",
           justifyContent: "center",
         }}
-      >
-        {peliculas &&
+      > {/*este check siempre va a dar true, porque peliculas es un array. si queres hacer el map solo cuando
+    peliculas tiene contenido, deberia ser peliculas.length && */}
+         {peliculas &&
           peliculas.map((pelicula) => {
             return (
               <Tarjeta
                 key={pelicula.id}
                 titulo={pelicula.title}
+                // si la api no te devuelve una imagen, esto se va a ver roto. necesitas una imagen que sirva en los casos donde 
+                // pelicula.poster_path no existe
                 urlImg={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
                 linkTarjeta={`/detalle-pelicula/${pelicula.id}`}
               />

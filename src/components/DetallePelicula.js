@@ -12,6 +12,7 @@ const DetallePelicula = () => {
   const [peliculaDetalle, setPeliculaDetalle] = useState([]);
 
   useEffect(() => {
+    // por que no usas aca tu hook?
     fetch(
       `https://api.themoviedb.org/3/movie/${params.idPelicula}?api_key=96357f7f10ae428b53766292b46e8b8e`
     )
@@ -125,6 +126,7 @@ const DetallePelicula = () => {
             </Typography>
             {peliculaDetalle.genres &&
               peliculaDetalle.genres.map((genre) => (
+                // falta un key en este map
                 <Typography
                   variant="subtitle1"
                   color="white"

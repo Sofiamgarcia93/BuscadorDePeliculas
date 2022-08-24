@@ -27,6 +27,7 @@ const Footer = () => {
       >
         Hecho por Sofia Garcia
       </Typography>
+      {/* recordá agregar aria label a tus links que no tienen texto!!  */}
       <IconButton
         target="_black"
         href="https://github.com/Sofiamgarcia93/BuscadorDePeliculas"
